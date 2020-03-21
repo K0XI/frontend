@@ -1,0 +1,81 @@
+
+body {
+    font-size: 15px !important;
+    font-family: monospace !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+h1 {
+    margin-left: 40px;
+}
+
+/* Obere Abschnitt */
+
+#btn-release {
+    margin-top: -3rem;
+    margin-right: 5rem;
+    float: right;
+    background-color: #5BC0BE;
+    border: none;
+    color: #0B132B;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+#top {
+    display: inline;
+}
+
+/* Auswahl für die difficulty */
+li {
+    display: inline-block;
+    margin-right: 25px;
+    padding: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.difficulty {
+    list-style: none;
+}
+
+
+/* Select des Faches/Thema */
+
+.select {
+    float: right;
+    width: 60px;
+}
+
+
+#input-field {
+    width: 27%;
+    margin-left: 40px;
+    height: 2rem;
+    border: 1.5px solid #0B132B;
+    border-radius: 8px;
+    padding-left: 15px;
+}
+
+/* Farben für difficulty */
+#green {
+    border: 1px solid green;
+    border-radius: 8px;
+}
+#orange{
+    border: 1px solid orange;
+    border-radius: 8px;
+}
+#red{
+    border: 1px solid red;
+    border-radius: 8px;
+}
+.select {
+    position: relative;
+    font-family: Hind Siliguri;
+  }
+  

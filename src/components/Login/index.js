@@ -3,21 +3,21 @@ import axios from 'axios';
 import './index.scss';
 
 class Template extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     state = {
         email: '',
         password: ''
     };
+
+    constructor(props) {
+        super(props);
+    }
 
     handleEmailChange = event => {
         this.setState({email: event.target.value});
         console.log(this.state.email);
     };
 
-    handlePasswortChange = event => {
+    handlePasswordChange = event => {
         this.setState({password: event.target.value});
         console.log(this.state.password);
     };
@@ -65,35 +65,45 @@ class Template extends Component {
     }
 
     render() {
-        return (<div className='loginComponent'> {/*describes the login-popup*/}
+        return (
+            <div className='loginComponent'> {/*describes the login-popup*/}
                 <form className='box' onSubmit={this.handleSubmit} action='loginPop.html' method='post'>
-                    <div className='boxinhalt'>
-                        <h1 id='Headline'> O G I N < /h1> {/*describes the email-input-box*/}
-                            <div className='input-box'>< input type='text' name='email' placeholder='Enter Email...'
-                                                                className='input-field' required
-                                                                onChange={this.handleEmailChange}/></div>
-                            {/*describes the password-input-box*/}
-                            <div className='input-box'>
-								<input type='password' name='passwort' id='passwort'
-									   placeholder='Enter Password...' className='input-field'
-									   required
-									   onChange={this.handlePasswortChange}/> {/*describes the two eye-icons in the field*/}
-                                <span className='eye' onClick={this.changeVisibility}><img id='hide1' src={eye}/>
-                                <img
-									id='hide2' src={eyeOff}/></span>
-                            </div>
-                            {/*describes the google-login-field*/}
-                            <button className='pointer' id='google-login'>
-								<img id='googleBild'
-									 src='https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png'/> Log
-                                In with Google
-                            </button>
-                            <input type='submit' id='login' className='button pointer' value='Log In'/>
+                    <div className='box-content'>
+                        <h1 id='Headline'>LOGIN</h1> {/*describes the email-input-box*/}
+                        <div className='input-box'>
+                            <input type='text'
+                                   name='email' p
+                                   placeholder='Enter Email...'
+                                   className='input-field'
+                                   required
+                                   onChange={this.handleEmailChange}/>
+                        </div>
+                        {/*describes the password-input-box*/}
+                        <div className='input-box'>
+                            <input type='password'
+                                   name='passwort'
+                                   id='passwort'
+                                   placeholder='Enter Password...'
+                                   className='input-field'
+                                   required
+                                   onChange={this.handlePasswordChange}/> {/*describes the two eye-icons in the field*/}
+                            <span className='eye' onClick={this.changeVisibility}>
+                                <img id='hide1' src={eye}/>
+                                <img id='hide2' src={eyeOff}/>
+                            </span>
+                        </div>
+                        {/*describes the google-login-field*/}
+                        <button className='pointer' id='google-login'>
+                            <img id='googleBild'
+                                 src='https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png'/>
+                            Log In with Google
+                        </button>
+                        <input type='submit' id='login' className='button pointer' value='Log In'/>
                     </div>
                 </form>
             </div>
-	)
+        )
     }
-    }
+}
 
-    export default Template;
+export default Template;

@@ -16,9 +16,7 @@ class Template extends Component {
 					<button id="btn-release">VERÖFFENTLICHEN</button>
 				</div>
 			
-			<br></br>
-			<br></br>
-			<br></br>
+			<br></br><br></br><br></br>
 
 				<div className="title">
 					<input type="text" id="input-field" placeholder="Aufgaben Pack Titel" /> 
@@ -38,6 +36,7 @@ class Template extends Component {
           				<option value="2">Deutsch</option>
           				<option value="3">Englisch</option>
           			</select>
+					  <br></br>
 					<select value={this.state.value} onChange={this.handleChange}>
           				<option value="0">Fach</option>
           				<option value="1">Mathe</option>
@@ -45,10 +44,88 @@ class Template extends Component {
           				<option value="3">Englisch</option>
           			</select>  
 				</div>
-
+					
 				<div>
-					<textarea placeholder="Beschreibung der Aufgabe"></textarea>
+					<textarea className="task-description" placeholder="Beschreibung der Aufgabe"></textarea>
 				</div>
+				<br></br>
+				<div className="questions">
+					<p>Frage 1</p>
+					<input type="text" id="input-field" placeholder="Aufgaben Pack Titel" /> 
+					<textarea className="task-description" placeholder="Beschreibung der Aufgabe"></textarea>
+				
+					<div className="radio-btn">	
+				  	<ul>
+				  		<li><div>
+				  			<input type="radio" id="feste" className="radio-input" name="Antwortmoeglichkeiten" value="Feste" />
+    						<label for="feste">Feste Antwort</label> 
+						</div></li>
+						<li><div>
+							<input type="radio" id="text" className="radio-input" name="Antwortmoeglichkeiten" value="Text" />
+    						<label for="text"> Text Eingabe</label>
+						</div></li>
+						<li><div>
+							<input type="radio" id="mathe" className="radio-input" name="Antwortmoeglichkeiten" value="Mathe" />
+    						<label for="mathe">Mathe Eingabe</label> 
+						</div></li>
+						<li><div>
+							<input type="radio" id="multiple" className="radio-input" name="Antwortmoeglichkeiten" value="Multiple" />
+    						<label for="multiple"> Multiple Choice</label> 
+						</div></li>
+						<li><div>
+							<input type="radio" id="code" className="radio-input" name="Antwortmoeglichkeiten" value="Code" />
+    						<label for="code">Code</label>
+						</div></li>
+						<li><div>
+							<input type="radio" id="zeichnen" className="radio-input" name="Antwortmoeglichkeiten" value="Zeichnen" />
+    						<label for="zeichnen">Zeichenfläche</label> 
+						</div></li>
+					</ul>
+				</div>
+					<textarea className="task-answer" placeholder="Antwort"></textarea>
+				</div>
+				<br></br>
+				<div className="questions">
+					<p>Frage 2</p>
+					<input type="text" id="input-field" placeholder="Aufgaben Pack Titel" /> 
+					<textarea className="task-description" placeholder="Beschreibung der Aufgabe"></textarea>
+				
+					<div className="radio-btn">	
+				  	<ul>
+				  		<li><div>
+				  			<input type="radio" id="feste" className="radio-input" name="Antwortmoeglichkeiten" value="Feste" />
+    						<label for="feste">Feste Antwort</label> 
+						</div></li>
+						<li><div>
+							<input type="radio" id="text" className="radio-input" name="Antwortmoeglichkeiten" value="Text" />
+    						<label for="text"> Text Eingabe</label>
+						</div></li>
+						<li><div>
+							<input type="radio" id="mathe" className="radio-input" name="Antwortmoeglichkeiten" value="Mathe" />
+    						<label for="mathe">Mathe Eingabe</label> 
+						</div></li>
+						<li><div>
+							<input type="radio" id="multiple" className="radio-input" name="Antwortmoeglichkeiten" value="Multiple" />
+    						<label for="multiple"> Multiple Choice</label> 
+						</div></li>
+						<li><div>
+							<input type="radio" id="code" className="radio-input" name="Antwortmoeglichkeiten" value="Code" />
+    						<label for="code">Code</label>
+						</div></li>
+						<li><div>
+							<input type="radio" id="zeichnen" className="radio-input" name="Antwortmoeglichkeiten" value="Zeichnen" />
+    						<label for="zeichnen">Zeichenfläche</label> 
+						</div></li>
+					</ul>
+					</div>
+
+				<div><input type="checkbox" /> <input type="text" id="input-field" placeholder="Antwort 1" /></div>
+				<div><input type="checkbox" /> <input type="text" id="input-field" placeholder="Antwort 1" /></div>
+					<div><input type="checkbox" /> <input type="text" id="input-field" placeholder="Antwort 1" /></div>
+					<div><input type="checkbox" /> <input type="text" id="input-field" placeholder="Antwort 1" /></div>
+				
+				</div>
+
 			</form>
 		);
 	}

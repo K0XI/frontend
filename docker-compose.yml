@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+    frontend:
+        image: eedu/frontend:latest
+        restart: always
+        ports:
+            - 5004:80

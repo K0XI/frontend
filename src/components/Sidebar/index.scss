@@ -1,0 +1,31 @@
+#Menu {
+	left: 0;
+	width: 115px;
+	height: 1108px;
+	background: #0b132b 0 0 no-repeat padding-box;
+	text-align: center;
+	opacity: 1;
+	padding-top: 30px;
+
+	a.menuElement:first-child {
+		margin-top: 0;
+	}
+
+	a.menuElement {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-decoration: none;
+		color: #687d9a;
+		margin-top: 50px;
+		display: block;
+	}
+
+	a.menuElement:hover {
+		cursor: pointer;
+	}
+
+	a.menuElement:focus {
+		outline: none;
+	}
+}

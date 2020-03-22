@@ -23,7 +23,7 @@ class Credits extends Component {
                         <p className="communityproject">
                             Ein Community Projekt der<br/>
                             theMorpheus Community<br/>
-                            Im Rahmen des <span>#WirVsVirusHackertron</span> 2020
+                            Im Rahmen des <span>#WirVsVirusHackathon</span> 2020
                         </p>
                         <p className="teilnehmende">
                             An diesem Projekt haben 67 begeisterte<br/>

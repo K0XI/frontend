@@ -119,11 +119,12 @@ class Template extends Component {
 					</ul>
 					</div>
 
-				<div><input type="checkbox" /> <input type="text" id="input-field" placeholder="Antwort 1" /></div>
-				<div><input type="checkbox" /> <input type="text" id="input-field" placeholder="Antwort 1" /></div>
-					<div><input type="checkbox" /> <input type="text" id="input-field" placeholder="Antwort 1" /></div>
-					<div><input type="checkbox" /> <input type="text" id="input-field" placeholder="Antwort 1" /></div>
-				
+				<ul>
+					<li><div><input type="checkbox" /> <input type="text" id="input-field-a" placeholder="Antwort 1" /></div></li>
+					<li><div><input type="checkbox" /> <input type="text" id="input-field-a" placeholder="Antwort 1" /></div></li>
+					<li><div><input type="checkbox" /> <input type="text" id="input-field-a" placeholder="Antwort 1" /></div></li>
+					<li><div><input type="checkbox" /> <input type="text" id="input-field-a" placeholder="Antwort 1" /></div></li>
+				</ul>
 				</div>
 
 			</form>
